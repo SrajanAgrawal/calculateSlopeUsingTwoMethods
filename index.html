@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+  <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/samsung/312/locked_1f512.png">
+    <title>WebApp</title>
+</head>
+<body>
+    <div class="start_btn"><button>Start</button></div>
+    <div class="info_box">
+        <div class="info-title"><span>Stability Of Slope</span></div>
+        <div class="info-list">
+            <div class="info finite"><button type="button">Finite Slope</button></div>
+            <div class="info infinite"><button type="button"  >Infinite Slope</button></div>
+        </div>
+        <!-- <div class="buttons">
+            <button class="quit">Exit</button>
+            <button class="restart">Continue</button>
+        </div> -->
+    </div>
+    <div class="finiteSurface_box">
+      <div class="finiteSurface_title"><span>Finite Surface</span></div>
+      <div class="finiteSurface_list">
+          <div class="info culmann_btn"><button type="button">Culmann Method </button></div>
+          <div class="info taylor_btn"><button type="button"> Taylor's Stability Number </button></div>
+      </div>
+      <div class="buttons">
+        <button class="prev">Prev</button>
+      </div>
+    </div>
+    <div class="infiniteSurface_box">
+      <div class="infiniteSurface_title"><span>Infinite Surface</span></div>
+      <div class="infiniteSurface_list">
+          <div class="info general_btn"><button type="button">General Method </button></div>
+          <div class="info seepage_btn"><button type="button"> Seepage Leaking Place</button></div>
+      </div>
+      <div class="buttons">
+        <button class="prev">Prev</button>
+      </div>
+    </div>
+    <!-- main Box -->
+    <div class="culmann_box">
+      <input type="number" id="cCul" class="culInput" placeholder="Enter c">
+      <input type="number" id="lCul" class="culInput" placeholder="Enter Length Of Plane">
+      <input type="number" id="wCul" class="culInput" placeholder="Enter W">
+      <input type="number" id="thetaCul" class="culInput" placeholder="Enter theta(in radian)">
+      <input type="number" id="phiCul" class="culInput" placeholder="Enter Phi">
+      <button type="calculate" class="calculateCul"> Calculate FOS</button>
+      <input type="text" id="FOSCul" class="culInput" name="" value="">
+      <div class="buttons">
+        <button class="prev">Prev</button>
+      </div>
+    </div>
+
+    <div class="taylor_box">
+       <input type="number" id="cTay" class="culInput" placeholder="Enter c">
+        <input type="number" id="sTay" class="culInput" placeholder="Enter Stability Number">
+        <input type="number" id="gamaTay" class="culInput" placeholder="Enter Gamma">
+        <input type="number" id="hTay" class="culInput" placeholder="Enter Safe Height">
+        <button type="calculate" class="calculateCul"> Calculate FOS</button>
+        <input type="text" id="FOSTay" class="culInput" name="" value="">
+      <div class="buttons">
+        <button class="prev">Prev</button>
+      </div>
+    </div>
+    <div class="general_box">
+      <input type="number" id="phiGen" class="culInput" placeholder="Enter Phi' (in radian) ">
+       <input type="number" id="phi_Gen" class="culInput" placeholder="Enter Phi'm (in radian)">
+       <button type="calculate" class="calculateCul"> Calculate FOS</button>
+       <input type="text" id="FOSGen" class="culInput" name="" value="">
+      <div class="buttons">
+        <button class="prev">Prev</button>
+      </div>
+    </div>
+    <div class="seepage_box">
+      <input type="number" id="ySee" class="culInput" placeholder="Enter y">
+      <input type="number" id="ywSee" class="culInput" placeholder="Enter Yw">
+      <input type="number" id="hSee" class="culInput" placeholder="Enter height">
+      <input type="number" id="zSee" class="culInput" placeholder="Enter z">
+      <input type="number" id="phiSee" class="culInput" placeholder="Enter Phi' ">
+      <input type="number" id="betaSee" class="culInput" placeholder="Enter Beta' ">
+      <button type="calculate" class="calculateCul"> Calculate FOS</button>
+      <input type="text" id="FOSSee" class="culInput" name="" value="">
+
+      <div class="buttons">
+        <button class="prev">Prev</button>
+      </div>
+    </div>
+</body>
+ <!-- js code  -->
+ <script src="js/index.js"></script>
+</html>
